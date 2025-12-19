@@ -1,43 +1,71 @@
-# Student Performance Prediction
+# 🎓 Student Performance Prediction using Machine Learning
 
-This is a simple Machine Learning project that predicts a student's final score based on their study hours, attendance, and previous scores using **Linear Regression**.
+## 📌 Overview
+This project focuses on predicting students’ final exam scores using machine learning techniques.  
+The model analyzes academic factors such as study hours, attendance percentage, and previous exam scores to estimate final performance.
 
----
-
-## 📝 Project Description
-
-The goal of this project is to create a predictive model that estimates a student's final score using easily available features like:
-
-- **Study Hours**: Number of hours the student studies.
-- **Attendance**: Class attendance percentage.
-- **Previous Score**: Score obtained in previous exams.
-
-The project uses **Python**, **pandas**, and **scikit-learn** for data handling and modeling.
+The goal of this project is to demonstrate an end-to-end machine learning workflow including data preparation, model training, evaluation, and visualization.
 
 ---
 
-## 💻 Dataset
-
-The dataset is small and manually created for demonstration purposes:
-
-| study_hours | attendance | previous_score | final_score |
-|------------|------------|----------------|-------------|
-| 1          | 50         | 40             | 42          |
-| 2          | 55         | 45             | 47          |
-| 3          | 60         | 50             | 52          |
-| 4          | 65         | 55             | 57          |
-| 5          | 70         | 60             | 62          |
-| 6          | 75         | 65             | 67          |
-| 7          | 80         | 70             | 72          |
-| 8          | 85         | 75             | 77          |
-| 9          | 90         | 80             | 82          |
-| 10         | 95         | 85             | 87          |
+## 🧠 Problem Statement
+Educational institutions often want to identify students who may need academic support.  
+By predicting final scores based on past performance and behavior, early interventions can be planned to improve outcomes.
 
 ---
 
-## ⚙️ How to Run
+## 📊 Dataset Description
+The dataset contains the following features:
 
-1. Clone the repository:
+| Feature Name | Description |
+|-------------|------------|
+| study_hours | Average daily study hours |
+| attendance | Attendance percentage |
+| previous_score | Score obtained in the previous exam |
+| final_score | Final exam score (target variable) |
 
-```bash
-git clone <your-repo-url>
+> Note: A structured sample dataset is used for demonstration purposes.
+
+---
+
+## ⚙️ Technologies Used
+- **Python**
+- **Pandas & NumPy** – Data handling
+- **Scikit-Learn** – Machine Learning models & evaluation
+- **Matplotlib** – Data visualization
+
+---
+
+## 🤖 Machine Learning Models
+The following models were implemented and compared:
+
+- **Linear Regression**
+- **Random Forest Regressor**
+
+---
+
+## 📈 Model Evaluation
+The performance of the models was evaluated using:
+
+- **Mean Absolute Error (MAE)**
+- **R² Score**
+
+The Random Forest model achieved higher accuracy, demonstrating better generalization on test data.
+
+---
+
+## 📉 Visualization
+An **Actual vs Predicted Score** scatter plot was created to visually evaluate model performance.  
+Points close to the diagonal indicate high prediction accuracy.
+
+---
+
+## 🚀 Key Features
+- End-to-end ML pipeline (data → model → evaluation)
+- Multiple model comparison
+- Real-time prediction for new student data
+- Performance visualization
+
+---
+
+## 📂 Project Structure
